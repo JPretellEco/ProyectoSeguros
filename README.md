@@ -1,30 +1,59 @@
-# **Proyecto: Detección de Clientes en Estado de Siniestro**  
 
-## **Contexto**
-La aseguradora **Seguros Titan** busca optimizar la identificación de clientes en estado de siniestro para reducir riesgos financieros. Para ello, se utilizará un modelo de **regresión logística** que analizará el comportamiento financiero de los clientes con base en sus datos históricos.
+---
 
-## **El Dataset**
-El conjunto de datos contiene información de **5,800 clientes**, con **18 variables clave**, entre las que se encuentran:
-- **Cliente_ID**: Identificador único de cada cliente.
-- **Antigüedad_Maxima**: Tiempo que el cliente ha sido parte de la aseguradora.
-- **Nivel_Ingresos**: Rango de ingresos del cliente. 0(bajo) a 5(alto)
-- **Saldo_Pendiente**: Deuda actual del cliente.
-- **Puntajes de Morosidad durante 6 meses**: Indicadores que reflejan el comportamiento de pago del cliente. 0:NoDq,1:1-29  a 6:150-179
-- **Siniestros durante 6 meses**: Número de reclamaciones realizadas en distintos períodos.
-- **Estado_Siniestro**: Variable categórica que indica si el cliente está en estado de siniestro (valores nulos presentes).
+# **🚀 Predicción de Siniestros en Seguros - Un Proyecto de Ciencia de Datos 📊**  
 
-## **Objetivo del Proyecto**
-- **Limpieza y preprocesamiento de los datos** para garantizar su calidad y fiabilidad.
-- **Análisis exploratorio de datos (EDA)** para identificar patrones y correlaciones clave.
-- **Implementación de un modelo de regresión logística** para predecir qué clientes están en estado de siniestro.
-- **Evaluación del modelo** mediante métricas como precisión, recall y AUC-ROC.
+## **📌 Contexto**  
+En el sector asegurador, anticiparse a los riesgos es clave para la sostenibilidad del negocio. Este proyecto tiene como objetivo desarrollar un modelo basado en datos para predecir la probabilidad de que un cliente sufra un siniestro en los próximos 12 meses. Para ello, trabajamos con un conjunto de datos simulado de una aseguradora global, "VIDA SEGUROS", recopilado durante seis meses.  
 
-## **Tecnologías Utilizadas**
-🔹 Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
-🔹 Jupyter Notebook para análisis interactivo  
-🔹 Regresión Logística para la predicción de siniestros  
-🔹 GitHub para control de versiones y documentación  
+Utilizando técnicas de análisis exploratorio de datos (EDA) y estadística inferencial, este proyecto busca generar información valiosa que pueda ayudar a la optimización de estrategias de mitigación de riesgos en el sector asegurador.  
 
-## **Impacto Esperado**
-Con este modelo, **Seguros Titan** podrá anticiparse a futuros riesgos financieros y tomar medidas preventivas para clientes con alto riesgo de siniestro. Esto permitirá mejorar la eficiencia operativa y la gestión de cobros, reduciendo pérdidas y optimizando la relación con los asegurados.
+---
 
+## **🛠️ Descripción de los Datos**  
+El dataset contiene información clave sobre los clientes, incluyendo su historial financiero y de siniestros. Algunas de las variables más importantes son:  
+
+- **Cliente_ID**: Identificador único del cliente.  
+- **Antigüedad_Maxima**: Antigüedad del cliente en meses.  
+- **Nivel_Ingresos**: Nivel de ingresos en una escala de 0 (bajo) a 5 (alto).  
+- **Saldo_Pendiente**: Monto pendiente de pago del cliente.  
+- **Puntaje_Morosidad**: Indicador de morosidad en la póliza de seguro.  
+- **Saldo_Pendiente_Seg.**: Saldo pendiente de la póliza.  
+- **Siniestros**: Número de siniestros previos en la historia del cliente.  
+- **Estado_Siniestro** (*Variable Objetivo*):  
+  - `0`: No Siniestro  
+  - `1`: Siniestro  
+
+---
+
+## **📊 Metodología y Entregables**  
+
+### **1️⃣ Exploración de Datos y Generación de Variables**  
+📌 **Objetivo**: Comprender el dataset y generar nuevas variables de valor.  
+
+### **2️⃣ Primer Entregable: Análisis Exploratorio de Datos (EDA)**  
+📌 **Objetivo**: Aplicar técnicas de estadística descriptiva para identificar patrones y relaciones en los datos.  
+✅ **Tareas Clave**:  
+- Visualización de distribuciones y correlaciones.  
+- Análisis de valores atípicos y datos faltantes.  
+- Creación de nuevas variables si es necesario.  
+
+### **3️⃣ Segundo Entregable: Modelado Estadístico**  
+📌 **Objetivo**: Aplicar técnicas de estadística inferencial y selección de variables para construir un modelo predictivo eficiente.  
+✅ **Restricción**: Trabajar con un máximo de 5 variables.  
+
+---
+
+## **📌 Tecnologías Utilizadas**  
+💻 Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
+📊 Estadística Descriptiva & Inferencial  
+🛠️ Modelado Predictivo  
+
+---
+
+## **💡 Impacto del Proyecto**  
+Este proyecto no solo busca predecir siniestros, sino también aportar valor al sector asegurador proporcionando insights clave sobre los factores de riesgo. Al mejorar la capacidad de predicción de siniestros, las aseguradoras pueden optimizar sus estrategias de suscripción y prevención, lo que se traduce en menores costos y mayor seguridad para sus clientes.  
+
+---
+
+¿Qué te parece este enfoque para tu primer proyecto en GitHub? 🚀
